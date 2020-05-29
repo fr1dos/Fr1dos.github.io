@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.del{
+	display: none;
+}
+
+
+.section-test{
+	height: 80%;
+	width: 90%;
+	border-radius: 40px 40px 40px 50px; 
+	background-color: #ebecec;
+	overflow: hidden;
+}
+.section-test-title{
+	width: 100%;
+	height: 10%;
+	background-color: #daaee8;
+	border-radius: 40px 40px 0px 0px; 
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.section-test-title>h2{
+	color: #fff;
+	font-family: Arial;
+}
+.test{
+	width: 100%;
+	height: 90%;
+	border-radius: 0px 0px 40px 250px;
+	padding: 20px;
+	flex-direction: column;
+
+}
+#tab-1:checked ~ #form-1,
+#tab-2:checked ~ #form-2,
+#tab-3:checked ~ #form-3, 
+#tab-4:checked ~ #form-4,
+#tab-5:checked ~ #form-5,
+#tab-6:checked ~ #form-6,
+#tab-7:checked ~ #form-7,
+#tab-8:checked ~ #form-8,
+#tab-9:checked ~ #form-9,
+#tab-10:checked ~ #form-10,
+#tab-11:checked ~ #form-11,
+#tab-12:checked ~ #form-12,
+#tab-13:checked ~ #form-13,
+#tab-14:checked ~ #form-14,
+#tab-15:checked ~ #form-15,
+#tab-16:checked ~ #form-16{
+	display: flex;
+}
+.test_text_block{
+	width: 100%;
+	height: 23%;
+	padding-right: 20px;
+}
+.test_text_block>p{
+	font-family: Arial;
+	font-size: 19px;
+}
+.test_button_block{
+	width: 100%;
+	height: 25%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+.answer{
+	width: 50%;
+	height: auto;
+	display: flex;
+	align-items: center;
+}
+.answer>label{
+	font-family: Arial;
+	color: #9d9e9e;
+	transition: 0.2s;
+}
+.answer>label::before{
+	content: "";
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	background-color: #d9dada;
+	border: 2px solid #fff;
+	border-radius: 100%;
+	vertical-align: middle;
+	margin-right: 10px;
+	transition: 0.2s;
+}
+#no:checked + label::before, #no2:checked + label::before, #no3:checked + label::before, #no4:checked + label::before, #no5:checked + label::before, #no6:checked + label::before, #no7:checked + label::before, #no8:checked + label::before, #no9:checked + label::before, #no10:checked + label::before, #no11:checked + label::before, #no12:checked + label::before, #no13:checked + label::before, #no14:checked + label::before, #no15:checked + label::before, #no16:checked + label::before, #no17:checked + label::before, #no18:checked + label::before, #no19:checked + label::before, #no20:checked + label::before,
+#maybe:checked  + label::before, #maybe2:checked  + label::before, #maybe3:checked  + label::before, #maybe4:checked  + label::before, #maybe5:checked  + label::before, #maybe6:checked  + label::before, #maybe7:checked  + label::before, #maybe8:checked  + label::before, #maybe9:checked  + label::before, #maybe10:checked  + label::before, #maybe11:checked  + label::before, #maybe12:checked  + label::before, #maybe13:checked  + label::before, #maybe14:checked  + label::before, #maybe15:checked  + label::before, #maybe16:checked  + label::before, #maybe17:checked  + label::before, #maybe18:checked  + label::before, #maybe19:checked  + label::before, #maybe20:checked  + label::before,
+#yes:checked + label::before, #yes2:checked + label::before, #yes3:checked + label::before, #yes4:checked + label::before, #yes5:checked + label::before,#yes6:checked + label::before, #yes7:checked + label::before, #yes8:checked + label::before, #yes9:checked + label::before, #yes10:checked + label::before, #yes11:checked + label::before, #yes12:checked + label::before, #yes13:checked + label::before, #yes14:checked + label::before, #yes15:checked + label::before, #yes16:checked + label::before, #yes17:checked + label::before, #yes18:checked + label::before, #yes19:checked + label::before, #yes20:checked + label::before,
+#ok:checked + label::before, #ok2:checked + label::before, #ok3:checked + label::before, #ok4:checked + label::before, #ok5:checked + label::before,#ok6:checked + label::before, #ok7:checked + label::before, #ok8:checked + label::before, #ok9:checked + label::before, #ok0:checked + label::before, #ok11:checked + label::before, #ok12:checked + label::before, #ok13:checked + label::before, #ok14:checked + label::before, #ok15:checked + label::before, #ok16:checked + label::before, #ok17:checked + label::before, #ok18:checked + label::before, #ok19:checked + label::before, #ok20:checked + label::before{
+	background-color: #9f6fae;
+}
+
+#no:checked + label, #no2:checked + label, #no3:checked + label, #no4:checked + label, #no5:checked + label, #no6:checked + label, #no7:checked + label, #no8:checked + label, #no9:checked + label, #no10:checked + label, #no11:checked + label, #no12:checked + label, #no13:checked + label, #no14:checked + label, #no15:checked + label, #no16:checked + label, #no17:checked + label, #no18:checked + label, #no19:checked + label, #no20:checked + label,
+#maybe:checked  + label, #maybe2:checked + label, #maybe3:checked + label, #maybe4:checked + label, #maybe5:checked + label, #maybe6:checked + label, #maybe7:checked + label, #maybe8:checked + label, #maybe9:checked + label, #maybe10:checked + label, #maybe11:checked + label, #maybe12:checked + label, #maybe13:checked + label, #maybe14:checked + label, #maybe15:checked + label, #maybe16:checked + label, #maybe17:checked + label, #maybe18:checked + label, #maybe19:checked + label, #maybe20:checked + label,
+#yes:checked + label, #yes2:checked + label, #yes3:checked + label, #yes4:checked + label, #yes5:checked + label, #yes6:checked + label, #yes7:checked + label, #yes8:checked + label, #yes9:checked + label, #yes10:checked + label, #yes11:checked + label, #yes12:checked + label, #yes13:checked + label, #yes14:checked + label, #yes15:checked + label, #yes16:checked + label, #yes17:checked + label, #yes18:checked + label, #yes19:checked + label, #yes20:checked + label
+#ok:checked + label, #ok2:checked + label, #ok3:checked + label, #ok4:checked + label, #ok5:checked + label, #ok6:checked + label, #ok7:checked + label, #ok8:checked + label, #ok9:checked + label, #ok10:checked + label, #ok11:checked + label, #ok12:checked + label, #ok13:checked + label, #ok14:checked + label, #ok15:checked + label, #ok16:checked + label, #ok17:checked + label, #ok18:checked + label, #ok19:checked + label, #ok20:checked + label{
+	color: #000;
+}
+.test_button{
+	width: 90%;
+	height: 40%;
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-end;
+}
+.tab{
+	width: 125px;
+	height: 35px;
+	border-radius: 50px 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: Arial;
+	color: #fff;
+	background-color: #daaee8;
+	cursor: pointer;
+	transition: 0.3s;
+}
+.tab:hover{
+	transform: scale(1.05);
+	box-shadow: 0px 3px 6px 3px rgba(0, 0, 0, 0.06);
+}
+.finish-block{
+	width: 100%;
+	height: 48%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+.results_text{
+	font-size: 30px;
+	font-family: Arial;
+	color: #000;
+}
