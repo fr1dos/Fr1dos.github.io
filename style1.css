@@ -99,6 +99,20 @@ header{
 .blockImg img {
 	width: 100%;
 }
+@media screen and (max-width: 900px) {
+	.cards_fb{
+		display: flex;
+		flex-direction: column;
+	}
+	.types_web_layout{
+		width: 90%;
+		margin: 0 auto;
+		margin: 2%;
+	}
+	.facts{
+		width: 60%;
+	}
+}
 
 
 
@@ -188,23 +202,117 @@ main{
 footer{
 	width: 100%;
 	display: flex;
-	justify-content: center;
-	height: 150px;
+	background: #F2F1EE;
+	flex-direction: column;
+	align-items: center;
 }
-
-
-
+.questions{
+	margin: -2;
+}
+.pfblock-line-white{
+	background: rgba(135, 135, 135, 0.5);
+	width: 100px;
+    height: 1px;
+}
+.icon-contacts{
+	width: 30%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.div-icon-main{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.div-icon{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.icon-square{
+	width: 22%;
+}
 @media screen and (max-width: 900px) {
-	.cards_fb{
+	.icon-contacts{
 		display: flex;
 		flex-direction: column;
 	}
-	.types_web_layout{
-		width: 90%;
-		margin: 0 auto;
-		margin: 2%;
-	}
-	.facts{
-		width: 60%;
-	}
+}
+
+
+.wrapper{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu{
+    width: 100%;
+    background: #fff;
+    align-self: center;
+    text-align: center;
+    z-index: 0;
+}
+
+.menu__item{
+    color: #000;
+    font-family: Arial;
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 800;
+    display: inline-block;
+    margin-right: 20px;
+    text-decoration: none;
+    z-index: 0;
+    text-transform: uppercase;
+}
+
+.menu__item:last-child{
+    margin-right: 0;
+}
+
+.callback{
+    align-self: center;
+}
+
+.callback__btn{
+    padding: 15px 20px;
+    line-height: 1;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: Arial;
+    font-weight: 300;
+    color: #00d2ad;
+    border: none;
+    background: #fff;
+    cursor: pointer;
+    box-shadow: -5px 5px 0px 0px rgba(0,0,0,0.3);
+}
+
+.header_fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    animation: showElement;
+    animation-duration: 1s;
+}
+
+@keyframes showElement{
+    0% {
+        opacity: 0;
+        top: -70px;
+    }
+    
+    100% {
+        opacity: 1;
+        top: 0;
+    }
 }

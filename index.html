@@ -9,18 +9,30 @@
         new WOW().init();
     </script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
-
+	<script src="script.js"></script>
 </head>
 <body>
 	<div class="box">
 		<section id="home">
 			<div class="home-overlay"></div>
 			<div class="headline_text">
-				<h3 class="headline_greeting">Привет! Меня зовут Давид и дело которым я занимаюсь -</h3>
-				<h1 class="headline_frontend">Вёрстка & Frontend </h1>
+				<h3 class="headline_greeting wow animate__animated animate__fadeInDown">Привет! Меня зовут Давид и дело которым я занимаюсь -</h3>
+				<h1 class="headline_frontend wow animate__animated animate__fadeInUp">Вёрстка & Frontend </h1>
 			</div>
 		</section>
-		<header class="about_me">
+		<div class="menu">
+		<div class="wrapper">
+            <div class="row">
+                <nav class="menu">
+                    <a href="#home" class="menu__item">Главная</a>
+                    <a href="#about_me" class="menu__item">Умения</a>
+                    <a href="#portfolio_fb" class="menu__item">Портфолио</a>
+                    <a href="#contacts" class="menu__item">Контакты</a>
+                </nav>
+            </div>
+        </div>
+        </div>
+		<header id="about_me" class="about_me">
 			<h2 class="mission">Мое занятие  -<br> это получать удовольствие от новых заданий</h2>
 			<div class="pfblock-line"></div>
 			<div class="facts">Имею интерес развиваться в сфере программирования, Способность к самообучению, исправляю ошибки на ходу, хочу достичь нового для себя.</div>
@@ -37,19 +49,50 @@
 				</div>
 			</div>
 		</header>
-		<main class="portfolio_fb">
+		<main id="portfolio_fb" class="portfolio_fb">
 			<h2>Портфолио</h2>
+
 			<div class="dws-wrapper-fb wow animate__animated animate__fadeInUp">
 				<div class="dws-wrapper"><a href="project_social_david/rules.html">
 			 	 			<img src="img/moralities.png" alt="">
 			 	 			<div class="dws-text">
-			 	 				<h3>ЭТИКА СОЦИАЛЬНОГО ВЗАИМОДЕЙСТВИЯ</h3>
+			 	 				<h3 style="text-align: center;">ЭТИКА СОЦИАЛЬНОГО ВЗАИМОДЕЙСТВИЯ</h3>
+			 	 				<p style="font-size: 10px; text-align: center;">(нажми на меня)</p>
 			 	 			</div>
 			 	 		</a>
 				</div> 	 
 			</div> 	 
 		</main>
-		<footer>
+		<footer id="contacts" class="contacts">
+			<h2>Контакты</h2>
+			<div class="pfblock-line-white"></div>
+			<h4 style="questions">Если у вас есть вопросы, я с радостью отвечу на них!</h4>
+			<div class="icon-contacts">
+				<div class="div-icon-main">
+					<div class="div-icon">
+						<img src="img/email.png" alt="" class="icon-square">
+						<h4>Электронное письмо:</h4>
+						<p>david.konstantinov13@gmail.com</p>
+					</div>
+					<div class="div-icon">
+						<img src="img/website.png" alt="" class="icon-square">
+						<h4>Web-сайт</h4>
+						<a style="color: #000; text-decoration: none;" href="https://fr1dos.github.io/"><p>https://fr1dos.github.io/</p></a>
+					</div>
+				</div>
+				<div class="div-icon-main">
+					<div class="div-icon">
+						<img src="img/inst.png" alt="" class="icon-square">
+						<h4>Инстаграм</h4>
+						<a style="color: #000; text-decoration: none;" href="https://www.instagram.com/fr1dos"><p>https://www.instagram.com/fr1dos</p></a>
+					</div>
+					<div class="div-icon">
+						<img src="img/skype.png" alt="" class="icon-square">
+						<h4>Скайп</h4>
+						<p>live:.cid.a66fa337fa0b78c0</p>
+					</div>
+				</div>
+			</div>
 		</footer>
 	</div>
 </body>
